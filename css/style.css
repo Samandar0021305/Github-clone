@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace;
+background-color: #010409;
+}
+
+.main{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+#form{
+    background-color: #0d1117;
+    display: flex;
+    margin: 30px 0;
+    padding: 17px;
+}
+#form input{
+background-color: transparent;
+border: none;
+color:#fff;
+font-size: 1.2rem;
+flex-grow: 1;
+}
+
+#form button{
+    background-color: #2783fa;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+input:focus{
+    outline: none;
+}
+#form button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#result{
+    background-color: #0d1117;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+.user-img{
+    width: 190px;
+    border-radius:50%;
+    margin-right: 35px;
+}
+
+.user-info{
+    color: #fff;
+}
+.name{
+    font-size: 35px;
+    margin: 0;
+}
+.login{
+    color: rgb(39, 131, 250);
+}
+.info{
+    padding: 20px 0;
+}
+.user-links{
+    padding-left: 0;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    align-items:flex-start;
+    justify-content: space-between;
+    column-gap: 35px;
+    row-gap: 18px;
+}
+.user-links li{
+    display: flex;
+    align-items: center;
+}
+.user-links li svg{
+    margin-right: 10px;
+}
+
+.followers{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #121923;
+    padding: 20px;
+    width: 100%;
+    border-radius:10px;
+    margin-bottom: 30px;
+}
+
+.followers li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
