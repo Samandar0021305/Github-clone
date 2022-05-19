@@ -25,9 +25,18 @@ if(user){
 
 
 const createUser = (user)=>{
-    if(user.name ==null){
+    if(user.name ==undefined  && user.login ==undefined && user.bio==undefined && user.public_repos ==undefined && user.twitter_username ==undefined && user.location == undefined  && user.company == undefined && user.blog == undefined && user.followers ==undefined && user.following == undefined){
         user.name = ""
+        user.following = ""
+        user.login = ""
+        user.public_repos = ""
+        user.location = ""
+        user.twitter_username = ""
+        user.company = ""
+        user.blog = ""
+        user.followers = ""
     }
+
     const cardHTML = `
     <div class="card">
     <img class="user-img" src=${user.avatar_url} alt=${user.name} />
